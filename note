@@ -1,0 +1,2 @@
+
+docker run -w /API/ -v /data/aliyun/TCGA/:/TCGA/ -dp 8090:8090 tcgaapi:latest python3 -m uvicorn --host=0.0.0.0 --port=8090 main:app --reload
